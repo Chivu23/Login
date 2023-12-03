@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1> WELCOME to This LOGIN Test Page</h1>
+    {% if username %}
+        <p> Heeey {{ username }} ! You are already logged in.</p>
+        <a href="/logout"> LogOUT !!!</a>
+    {% else %}
+        <p> You are not logged in. Please be kind an <a href="/login"> LOGIN</a> to access the home page.</p>
+        <p> And if are not register, you can register ---> <a href="/register"> R.E.G.I.S.T.E.R.</a> here.</p>
+    {% endif %}
+</body>
+</html>
